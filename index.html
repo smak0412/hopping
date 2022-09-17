@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump</title>
+</head>
+<body>
+
+    <style>
+        body {
+            margin: 30px 0 0;
+            display: flex;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+        #controller {
+            display: flex;
+            justify-content: space-between;
+        }
+        #controller > div {
+            margin-top: 40px;
+            font-size: 4rem;
+            user-select: none;
+            background: #eee;
+            padding: 20px 40px;
+        }
+        #left {
+        }
+        #right {
+        }
+        #reload {
+            width: fit-content;
+            margin: 60px auto 0;
+            font-size: 3rem;
+            user-select: none;
+            background: #eee;
+            padding: 0px 20px 15px;
+        }
+        canvas {
+
+        }
+
+    </style>
+
+    <main>
+        <div id="game"></div>
+        <div id="controller">
+            <div id="left">＜</div>
+            <div id="right">＞</div>
+        </div>
+        <div id="reload">&#x21BB;</div>
+    </main>
+    <div id="score"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
